@@ -29,7 +29,6 @@ def main():
     results_part_1 = str(die_1) + " (First die) + " + str(die_2) + " (Second die) = " + str(total_die)
     results_part_2 = "\nYour number was: " + str(person_guess) + "\nComputer's number was: " + str(computer_guess)
     # whoever's number is the same wins 
-    
     if person_guess == total_die == computer_guess: 
         play_again = input(str(results_part_1) + str(results_part_2) + "\nYou both win! How rare. Play again? y/n: ").lower()
         return play_again
@@ -42,10 +41,6 @@ def main():
     else:
         play_again = input(str(results_part_1) + str(results_part_2) + "\nLooks like no one won this round. Play again? y/n: ").lower()
         return play_again
-# create error function
-def error():
-    value_to_get_out = input("Please input y for yes or n for no: ").lower()
-    return value_to_get_out
 # play the game and assign play_again to decide if the player wants to play again 
 play_again = main()
 # run code and the loop
